@@ -8,8 +8,6 @@ Original file is located at
 """
 
 
-!pip install dill &> /dev/null
-!pip install soccerplots &> /dev/null
 
 import pandas as pd
 import dill
