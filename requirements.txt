@@ -1,6 +1,6 @@
 soccerdata
 dill
-pandas
+pandas<2.0.0
 streamlit
 scikit-learn
 matplotlib
