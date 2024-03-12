@@ -33,7 +33,6 @@ def make_ranges(player1, player2, params=params):
     ranges.append((a,b))
   return ranges
 
-from app_functions import make_ranges
 import pandas as pd
 import matplotlib.pyplot as plt
 from soccerplots.radar_chart import Radar
