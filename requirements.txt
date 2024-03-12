@@ -1,0 +1,9 @@
+soccerdata
+dill
+pandas
+streamlit
+sklearn
+matplotlib
+scipy
+yellowbrick
+soccerplots
