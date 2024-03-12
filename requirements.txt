@@ -2,7 +2,7 @@ soccerdata
 dill
 pandas
 streamlit
-sklearn
+scikit-learn
 matplotlib
 scipy
 yellowbrick
