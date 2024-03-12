@@ -7,9 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1En0PMZUSIMiFl0WfnOlfrV_ubwEAGV7M
 """
 
-!pip install streamlit &> /dev/null
-!pip install dill &> /dev/null
-!pip install soccerplots &> /dev/null
+
 
 import streamlit as st
 from app_functions import make_radar, make_ranges
