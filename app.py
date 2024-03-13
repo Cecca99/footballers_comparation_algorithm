@@ -16,7 +16,7 @@ from app_functions import make_radar, make_ranges
 
 
 with open('data/not_sorted_defenders.pkl','rb') as f:
-    players_stats = dill.load(f)
+    players_stats = pd.read_pickle(f)
 
 
 params = ['progressive_passes_per90', 'tackles_per90',
