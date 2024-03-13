@@ -14,7 +14,7 @@ import dill
 
 
 with open('data/not_sorted_defenders.pkl','rb') as f:
-    players_stats = dill.load(f)
+    players_stats = pd.read_pickle(f)
 
 params = ['progressive_passes_per90', 'tackles_per90',
  'tackles_won_per90', 'blocks_per90', 'shots_blocked_per90', 'interceptions_per90', 'tackles_interceptions_per90', 'clearances_per90', 'ball_recoveries_per90', 'aerial_duels_per90',
@@ -35,7 +35,7 @@ def make_ranges(player1, player2, params=params):
 
 
 with open('data/not_sorted_defenders.pkl','rb') as f:
-    players_stats = dill.load(f)
+    players_stats = pd.read_pickle(f)
 
 params = ['progressive_passes_per90', 'tackles_per90',
  'tackles_won_per90', 'blocks_per90', 'shots_blocked_per90', 'interceptions_per90', 'tackles_interceptions_per90', 'clearances_per90', 'ball_recoveries_per90', 'aerial_duels_per90',
