@@ -10,12 +10,13 @@ Original file is located at
 
 
 import streamlit as st
+import dill
 from app_functions import make_radar, make_ranges
-import pickle
+
 
 
 with open('data/not_sorted_defenders.pkl','rb') as f:
-    players_stats = pickle.load(f)
+    players_stats = dill.load(f)
 
 
 params = ['progressive_passes_per90', 'tackles_per90',
