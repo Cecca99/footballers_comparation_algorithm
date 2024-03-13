@@ -8,7 +8,7 @@ Original file is located at
 """
 
 
-
+import pandas as pd
 import streamlit as st
 import dill
 from app_functions import make_radar, make_ranges
