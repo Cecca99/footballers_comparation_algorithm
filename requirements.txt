@@ -1,4 +1,4 @@
-dill
+pickle
 pandas==1.5.3
 streamlit
 matplotlib
