@@ -7,13 +7,14 @@ Original file is located at
     https://colab.research.google.com/drive/1En0PMZUSIMiFl0WfnOlfrV_ubwEAGV7M
 """
 
-
-
 import pandas as pd
-import dill
+import matplotlib.pyplot as plt
+from soccerplots.radar_chart import Radar
+import pickle
+
 
 with open('data/not_sorted_defenders.pkl','rb') as f:
-    players_stats = dill.load(f)
+    players_stats = pickle.load(f)
 
 params = ['progressive_passes_per90', 'tackles_per90',
  'tackles_won_per90', 'blocks_per90', 'shots_blocked_per90', 'interceptions_per90', 'tackles_interceptions_per90', 'clearances_per90', 'ball_recoveries_per90', 'aerial_duels_per90',
@@ -31,13 +32,10 @@ def make_ranges(player1, player2, params=params):
     ranges.append((a,b))
   return ranges
 
-import pandas as pd
-import matplotlib.pyplot as plt
-from soccerplots.radar_chart import Radar
-import dill
+
 
 with open('data/not_sorted_defenders.pkl','rb') as f:
-    players_stats = dill.load(f)
+    players_stats = pickle.load(f)
 
 params = ['progressive_passes_per90', 'tackles_per90',
  'tackles_won_per90', 'blocks_per90', 'shots_blocked_per90', 'interceptions_per90', 'tackles_interceptions_per90', 'clearances_per90', 'ball_recoveries_per90', 'aerial_duels_per90',
