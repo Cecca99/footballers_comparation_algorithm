@@ -1,9 +1,5 @@
-soccerdata
 dill
 pandas==1.5.3
 streamlit
-scikit-learn
 matplotlib
-scipy
-yellowbrick
 soccerplots
