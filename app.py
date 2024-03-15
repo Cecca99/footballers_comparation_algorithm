@@ -28,6 +28,8 @@ params = ['progressive_passes_per90', 'tackles_per90',
 st.header('Compare defenders with Francesco Acerbi', divider='red')
 st.write("Choose a defender to compare with Acerbi and at least 3 statistics on which to compare the two players.")
 
+league = st.selectbox(label = 'Select a league', options = list(players_stats['League'].unique()))
+
 if league:
   team = st.selectbox(label = 'Select a team', options = list(players_stats[players_stats['League'] == league]['Team'].unique()))
   if team:
