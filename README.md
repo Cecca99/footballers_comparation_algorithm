@@ -13,7 +13,7 @@ An application based on this approach has also been developed, allowing various 
 
 The application can be found at this link: [app](https://footballerscomparationalgorithm-hz5y4di5t2uuawexugz3ws.streamlit.app/)
 
-All data refer to the 2022-2023 season and were retrieved from the *FBref* platform.
+All data refer to the 2022-2023 season were retrieved from the *FBref* platform.
 Some data about the players found refer to the 2023-2024 season and were scraped from *Transfermarkt*.
 
 This repository is structured in the following way:
