@@ -27,16 +27,21 @@ params = ['progressive_passes_per90', 'tackles_per90',
 
 st.header('Compare defenders with Francesco Acerbi', divider='red')
 st.write("Choose a defender to compare with Acerbi and at least 3 statistics on which to compare the two players.")
-player = st.selectbox(label = 'Select a player',options=players_stats['Player'])
 
-if player:
-  st.write(players_stats[players_stats['Player'] == player][['Player','Team','Born', 'Nation'] + params])
-  input_params = list(st.multiselect(label = 'Select 3 or more stats on which you want to compare the players', options = list(players_stats.columns)[10:]))
-  if len(input_params) >= 3:
-    st.pyplot(fig = make_radar('Francesco Acerbi', player,input_params)[0])
-  else:
-    st.pyplot(fig = make_radar('Francesco Acerbi', player, params)[0])
+if league:
+  team = st.selectbox(label = 'Select a team', options = list(players_stats[players_stats['League'] == league]['Team'].unique()))
+  if team:
+    player = st.selectbox(label = 'Select a player',options=list(players_stats[players_stats['Team'] == team]['Player'].unique()))
 
-  st.write("The 5 players most similar to Francesco Acerbi are:")
-  st.write(players_stats.sort_values(by='distance from acerbi')[['Player', 'Team','distance from acerbi']][1:6])
+
+    if player:
+      st.write(players_stats[players_stats['Player'] == player][['Player','Team','Born', 'Nation'] + params])
+      input_params = list(st.multiselect(label = 'Select 3 or more stats on which you want to compare the players', options = list(players_stats.columns)[10:]))
+      if len(input_params) >= 3:
+        st.pyplot(fig = make_radar('Francesco Acerbi', player,input_params)[0])
+      else:
+        st.pyplot(fig = make_radar('Francesco Acerbi', player, params)[0])
+
+st.write("The 5 players most similar to Francesco Acerbi are:")
+st.write(players_stats.sort_values(by='distance from acerbi')[['Player', 'Team','distance from acerbi']][1:6])
 
