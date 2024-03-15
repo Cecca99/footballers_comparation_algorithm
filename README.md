@@ -1,5 +1,7 @@
 # **Approach to find similar players to Francesco Acerbi**
 
-This project aims to find similar players to Francesco Acerbi by analyzing different types of statistics retrived on the FBref platform.
+This project is aimed at developing an approach to find 5 footballers most similar to a reference player. It involves the use of data manipulation tools , clustering techniques and calculation of Euclidean distances; the reference player will be Inter Milan defender Francesco Acerbi.
+
+An application based on this approach has also been developed, allowing various defenders to be compared with Francesco Acerbi based on various statistics of the user's choice. The application can be found at this link: [app](https://footballerscomparationalgorithm-hz5y4di5t2uuawexugz3ws.streamlit.app/) 
 
 
