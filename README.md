@@ -1,6 +1,13 @@
 # **Approach to find similar players to Francesco Acerbi**
 
 This project is aimed at developing an approach to find 5 footballers most similar to a reference player. It involves the use of data manipulation tools , clustering techniques and calculation of Euclidean distances; the reference player will be Inter defender Francesco Acerbi.
+The approach consists in:
+* Data retrieval phase
+* Data manipulation and preparation phase
+* Clustering to group similar players
+* Computation of euclidean distances between Acerbi and other players
+* Visualization of the results
+
 
 An application based on this approach has also been developed, allowing various defenders to be compared with Francesco Acerbi based on various statistics of the user's choice. It will give also a similarity score between the player chosen and Acerbi. It has been developed with *Streamlit*.
 
