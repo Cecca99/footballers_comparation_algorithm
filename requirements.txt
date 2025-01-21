@@ -2,3 +2,4 @@ pandas==1.5.3
 streamlit
 soccerplots
 dill==0.3.8
+numpy==1.26.4
